@@ -1,0 +1,88 @@
+.Home {
+    display: flex;
+    flex-flow: row;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+}
+
+.desktop_responsive {
+    width: 30%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    border-right: 1px solid #ccc;
+}
+
+.sideBar {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 100%;
+    /* background-color: #ccc; */
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    /* border: 1px solid black; */
+    /* background-color: #ffc107; */
+}
+
+.splash {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 8px solid #ffc107;
+    height: 100%;
+    width: 100%;
+}
+
+.welcomeHeader {
+    color: #384850;
+    letter-spacing: 4px;
+}
+
+.welcomeHeader span {
+    border-bottom: 3px solid #ffc107;
+}
+
+.welcomeMessage {
+    color: #333;
+}
+
+.startButton {
+    display: none;
+    padding: 9px 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: white;
+    color: #384850;
+    border: 2px solid #ffc107;
+    cursor: pointer;
+}
+
+.startButton:hover {
+    background-color: #ffc107;
+    color: white;
+}
+
+@media  (max-width: 900px) {
+    .desktop_responsive {
+        display: none;
+    }
+
+    .startButton{
+        display: block;
+    }
+
+    .content {
+        width: 100%;
+    }
+}

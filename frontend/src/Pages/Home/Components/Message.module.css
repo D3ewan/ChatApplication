@@ -1,0 +1,24 @@
+.Message {
+    text-align: left;  /* .ReadingSide class is displayed flex in ChatRoom.css */
+    /* min-height: 50px; */
+    max-width: 500px;
+    padding: 10px;
+    margin: 3px 10px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    color: white;
+    box-shadow: 0px 0px 3px #ccc;
+    /* border: 1px solid black; */
+}
+
+/* .MessageText {
+    border: 1px solid black;
+} */
+
+.MessageStatus {
+    margin-top: 5px;
+    font-size: 12px;
+    text-align: right;
+    /* height: 20%; */
+    /* border: 1px solid black; */
+}

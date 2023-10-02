@@ -1,0 +1,218 @@
+.ChatRoom {
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* background-color: #ffc107; */
+}
+
+.ChatHeader {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+    width: 100%;
+    background-color: #fcfcfc;
+    border-bottom: 1px solid #ccc;
+}
+
+.User {
+    display: flex;
+    flex-flow: row;
+}
+
+.toggleButton {
+    /* background-color: #ccc; */
+    /* width: 50px; */
+    /* height: 50px; */
+    margin-right: 20px;
+}
+
+@media (min-width: 900px) {
+    .toggleButton {
+        display: none;
+    }
+    
+}
+
+.ChatHeader .ImageSide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    /* border: 1px solid black; */
+}
+
+.ChatHeader .InfoSide {
+    display: flex;
+    flex-flow: column;
+    width: auto;
+    /* margin-left: -20px; */
+    /* border: 1px solid black; */
+}
+
+.InfoSide .Name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #384850;
+    /* color: #333; */
+    width: fit-content;
+    transition: 0.3s ease-out;
+    /* border: 1px solid black; */
+}
+
+.InfoSide .Status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    margin-top: -5px;
+    width: fit-content;
+    color: #333;
+    transition: 0.3s ease-in;
+    /* border: 1px solid black; */
+}
+
+.ImageSide img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #ccc;
+} 
+
+.ReadingSide {
+    display: flex;
+    flex-flow: column;
+    flex-direction: column-reverse; 
+    width: 100%;
+    height: 76%;
+    padding: 35px 0px;
+    overflow-y: scroll;
+    background-color: #fefefe;
+    /* border: 1px solid black; */
+    /* background-image: url('C:\Users\Shehab Fekry\Downloads\vecteezy/vecteezy.jpg');
+    background-size:contain;
+    background-position:center;
+    background-repeat: no-repeat; */
+}
+
+.WritingSide {
+    display: flex;
+    flex-flow: row;
+    position: sticky;
+    bottom: 0px;
+    width: 100%;
+    min-height: 70px;
+    background-color: white;
+    box-shadow: 0px 0px 5px #ccc;
+}
+
+.ToolContainer {
+    /* border-right: 1px solid #ccc; */
+    width: 100px;
+    height: 100%;
+}
+
+.InputContainer {
+    display: flex;
+    flex-flow: row;
+    width: calc(100% - 100px);
+    height: 100%;
+    /* border: 1px solid black; */
+}
+
+.InputContainer .InputSide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 70px);
+    height: 100%;
+    /* border: 1px solid black; */
+   
+}
+
+.InputSide input {
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    /* border: 2px solid #ffc107; */
+    background-color: #efefef;
+}
+
+
+.InputContainer .ButtonSide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    /* border: 1px solid black; */
+    height: 100%;
+}
+
+.ButtonSide button{
+    width: 80px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    font-weight: bold;
+    background-color: #edb100;
+    background-color: #384850;
+    color: white;
+    box-shadow: 0px 0px 5px #ccc;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+}
+
+.ButtonSide button:hover {
+    box-shadow: 0px 0px 5px #384850;
+}
+
+.typingEffict {
+    display: none;
+    position: absolute;
+    bottom: 70px;
+    padding: 10px;
+    margin-left: 5px;
+    width: fit-content;
+    /* height: 50px; */
+    /* width: 100px; */
+    font-weight: 700;
+    color: #333;
+    /* background-color: #ccc; */
+    /* border: 1px solid #333; */
+}
+
+.buttonBackground {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    box-shadow: 0px 0px 5px #ccc;
+    height: 47px;
+    width: 47px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.placeholder {
+    /* border: 1px solid black; */
+    position: absolute;
+    right: calc(50% - 120px);
+    top: 30%;
+}
+
+.placeholder h4 {
+    letter-spacing: 4px;
+    color: #384850;
+    margin-top: -5px;
+
+}
+

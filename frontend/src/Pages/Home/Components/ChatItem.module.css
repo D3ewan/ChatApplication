@@ -1,0 +1,117 @@
+.ChatItem {
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 70px;
+    /* background-color: #fcfcfc; */
+    /* border-top: 1px solid #ccc; */
+    /* border-bottom: 1px solid #ccc; */
+    margin-bottom: 4px;
+    color: #333;
+}
+
+.ChatItem:hover {
+    /* background-color: rgba(255, 193, 7, 0.6); */
+    background-color: #efefef
+    ;
+    cursor: pointer;
+}
+
+.ImageSide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 100%;
+    /* border: 1px solid blue; */
+}
+
+.ImageSide img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+
+.ImageSide .Active {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #ffc107;
+    border: 2px solid white;
+    position: relative;
+    margin-top: -18px;
+    margin-left: 42px;
+    
+}
+
+.InfoSide {
+    display: flex;
+    flex-flow: column;
+    width: calc(100% - 90px);
+    height: 100%;
+    /* border: 1px solid black; */
+
+}
+
+.InfoSide .Name {
+    margin-top: 10px;
+    height: 40%;
+    width: fit-content;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: bold;
+    color: #384850;
+    font-family: Arial, Helvetica, sans-serif;
+    /* margin-left: 10px; */
+    /* border: 1px solid black; */
+}
+
+.InfoSide .Message {
+    margin-top: -5px;
+    display: flex;
+    width: 100%;
+    height: 60%;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    /* border: 1px solid black; */
+}
+
+.hide {
+    display: none;
+}
+
+
+.typingEffictSideBar {
+    color: #333;
+    font-weight: 700;
+    /* border: 1px solid #333; */
+    /* background-color: #ccc; */
+}
+
+.counter {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 20px;
+    top: calc(50% - 13px);
+    width: 26px;
+    height: 26px;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 50%;
+    background-color: #ffc107;
+    color: white;
+}
+
+
+.unCheckedMessage {
+    color: #333;
+    font-weight: 700;
+}
